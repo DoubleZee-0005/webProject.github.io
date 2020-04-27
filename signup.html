@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signupStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/325897fa15.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>SignUp | signIn</title>
+</head>
+
+<body>
+    <div class="main-form-container animated rollin">
+        <div class="main-form">
+            <div class="signInUp">
+                <form action="" class="text-center mt-5 signIn">
+                    <h1>Sigin</h1>
+                    <div class="social-icons">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p class="pt-3 text-secondary">or use your account</p>
+                    <input type="email" placeholder="Email"><br>
+                    <input type="password" placeholder="password"><br>
+                    <a href="" class="text-secondary">Forget password</a><br>
+                    <button class="mt-3 btn btn-basic">Sign In</button>
+                </form>
+                <hr>
+                <div class="sign-overlay text-center">
+                    <form action="" class="overlay-text text-center ">
+                        <h1 class="overlay-text-h1">Welcome Back!</h1>
+                        <p class="overlay-text-p">Already have an account click me and sign in</p>
+                        <button type="button" id="signIn-btn" class="mt-3 btn btn-non-basic">SIGN IN</button>
+                        <button type="button" id="signUp-btn" class="mt-3 btn btn-non-basic">SIGN UP</button>
+                    </form>
+                </div>
+            </div>
+            <div class="signInUp">
+                <form action="" class="text-center mt-5 signUp">
+                    <h1>Create Account</h1>
+                    <div class="social-icons">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p class="pt-3 text-secondary">or use e-mail for registration</p>
+                    <input type="text" placeholder="Name"><br>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button class="mt-3 btn btn-basic">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+:root
+{
+  --main-bg-color: #0b3c5d;
+  --main-bg-color-2:#1d2731;
+  --secondary-color:#d9b310;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: rgb(241, 246, 250) !important;
+}
+
+.main-form-container
+{
+    margin-top: 130px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-form
+{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.37), 0 10px 10px rgba(0, 0, 0, 0.349);
+}
+
+.signInUp
+{
+    width: 400px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+.social-icons a
+{
+    border: 1px solid #dddddd;
+    color: rgba(0, 0, 0, 0.719);
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+}
+
+.social-icons a:nth-child(1):hover
+{
+    background-color: rgb(57, 129, 238);
+    text-decoration: none;
+    color: white;
+}
+.social-icons a:nth-child(2):hover
+{
+    background-color: rgb(231, 79, 79);
+    text-decoration: none;
+    color: white;
+}
+.social-icons a:nth-child(3):hover
+{
+    background-color: rgb(32, 75, 139);
+    text-decoration: none;
+    color: white;
+}
+
+.signInUp input
+{
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color:#dddddd;;
+    border: none;
+}
+
+.btn-basic
+{
+    border-radius: 50px !important;
+    padding: 10px 50px !important;
+    background-color: var(--secondary-color) !important;
+    color: white !important;
+}
+.btn-basic:hover
+{
+    background-color: var(--main-bg-color) !important;
+}
+
+.btn-non-basic
+{
+    border-radius: 50px !important;
+    padding: 10px 50px !important;
+    border: 2px solid white!important;
+    color: white !important;
+}
+
+.btn-non-basic:hover
+{
+   background-color: var(--secondary-color) !important; 
+}
+
+
+.sign-overlay
+{
+    position: relative;
+    height: 100.5%;
+    width: 100%;
+    top: -86%;
+    background: linear-gradient(to left,var(--main-bg-color),var(--main-bg-color-2));
+    transition: all ease-out .7s;
+    z-index: 99;
+}
+
+.overlay-text
+{
+    padding-top: 150px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in .5s;
+}
+
+.overlay-text-h1, .overlay-text-p
+{
+    color: white;
+}
+
+#signUp-btn
+{
+    display: none;
+}
+
+.signUp
+{
+    transition: all ease-in .5s;
+}
+.signIn
+{
+    opacity:0;
+}

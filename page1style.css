@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+  }
+  :root
+{
+  --main-bg-color: #0b3c5d;
+  --main-bg-color-2:#1d2731;
+  --secondary-color:#d9b310;
+}
+
+.logo:hover
+{
+    opacity: .8;
+}
+.navbar
+{
+    text-transform: uppercase;
+    font-size: 20px;
+    border-bottom: 3px solid var(--main-bg-color);
+}
+
+.navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
+    transition: all ease .5s;
+}
+.nav-item
+{
+    max-width: 15rem;
+}
+.navbar-toggler
+{
+    border:2px solid var(--secondary-color) !important;
+}
+
+.nav-item-active
+{
+    height: 5px;
+    width: 8rem;
+    background-color: var(--secondary-color);
+    position: absolute;
+    bottom: .8rem;
+    transition: ease .6s;
+}
+
+.nav-item:nth-child(1):hover ~ .nav-item-active
+{
+    transform: translateX(0);
+}
+
+.nav-item:nth-child(2):hover ~ .nav-item-active
+{
+    transform: translateX(10rem);
+}
+
+.nav-item:nth-child(3):hover ~ .nav-item-active
+{
+    transform: translateX(21rem);
+}
+
+.nav-item:nth-child(4):hover ~ .nav-item-active
+{
+    transform: translateX(32rem);
+}
+.navbar-nav > li > a
+{
+    color: var(--main-bg-color) !important;
+    
+}
+
+/*----------------------------nav-bar-1-----------------------------*/
+.nav-bar-2{
+    background-color: var(--main-bg-color);
+    font-size: 20px;
+}
+.nav-bar-2 .nav-item a
+{
+    color: var(--secondary-color);
+    transition: all ease-in .2s;
+}
+.nav-bar-2 .nav-item a:hover
+{
+    color: #ebd67b;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+}
+
+.carousel-item
+{
+
+    background-color: var(--main-bg-color);
+}
+
+.btn-primary{
+  background-color: var(--main-bg-color) !important;
+  color: white;
+  font-size: 19px !important;
+}
+
+.btn-primary:hover
+{
+  background-color: var(--secondary-color) !important;
+}
+  .main-heading
+  {
+    color: var(--secondary-color);
+    text-transform: uppercase;
+  }
+  .sub-heading
+  {
+    color: var(--main-bg-color);
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+
+  footer {
+    position: absolute;
+   left: 0;
+   bottom:-1;
+   width: 100%;
+   background-color: var(--main-bg-color);
+   color: white;
+   text-align: center;
+}
+
+@media only screen and (max-width: 990px) {
+  .nav-item-active{
+    display: none;    
+  }
+  
+}
